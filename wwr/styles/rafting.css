@@ -15,7 +15,7 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent2-color);
+  color: var(--primary-color);
   background-color: var(--secondary-color);
 }
 
@@ -101,7 +101,7 @@ nav a {
   transition: background 0.2s;
 }
 
-nav a:hover {
+header nav a:hover {
   background: var(--accent2-color);
   color: #fff;
 }
@@ -131,8 +131,9 @@ nav a:hover {
 .adventures div {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 26px;
 }
 
 .adventures div img {
@@ -143,4 +144,26 @@ nav a:hover {
 .adventures h2 {
   margin-bottom: 20px;
   margin-left: 16px;
+}
+
+.adventures figure {
+  width: 100%;
+}
+
+.adventures figure img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 0.89rem;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
 }
