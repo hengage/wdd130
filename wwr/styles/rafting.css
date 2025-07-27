@@ -75,3 +75,33 @@ article {
   width: 125px;
   float: right;
 }
+
+/* Header as grid: logo and nav side by side */
+header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+/* Nav as horizontal flex bar */
+header nav {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: var(--accent2-color);
+  color: #fff;
+}
