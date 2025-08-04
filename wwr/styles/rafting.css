@@ -196,14 +196,12 @@ footer p {
 }
 
 .company-details > :not(:last-child) {
-  /* margin-block-start: 52px; */
   margin-block-end: 18px;
 }
 
 .contact-info .map {
   flex-basis: 100px;
   flex-grow: 1;
-  /* background-color: blue; */
 }
 
 .company-details ul {
@@ -233,7 +231,6 @@ footer p {
 
 .employees p {
   text-align: center;
-  line-height: -220px;
   border: 1px solid var(--primary-color);
 }
 
@@ -261,7 +258,6 @@ footer p {
 .message-section {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   gap: 20px;
 }
 
