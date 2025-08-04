@@ -167,3 +167,145 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
+
+/* ======= Contact Page Styles ============= */
+.contact-page {
+  margin-top: 73px;
+  margin-bottom: 156px;
+}
+
+.contact-page .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-info h2 {
+  text-align: left;
+}
+
+.contact-info .company-details {
+  flex-basis: 200px;
+  flex-grow: 2;
+  padding-top: 6px;
+}
+
+.company-details > :not(:last-child) {
+  /* margin-block-start: 52px; */
+  margin-block-end: 18px;
+}
+
+.contact-info .map {
+  flex-basis: 100px;
+  flex-grow: 1;
+  /* background-color: blue; */
+}
+
+.company-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-page .team {
+  margin-top: 80px;
+}
+
+.employees {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.employees img {
+  width: 230px;
+  flex-basis: 83%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.employees p {
+  text-align: center;
+  line-height: -220px;
+  border: 1px solid var(--primary-color);
+}
+
+.employees p:nth-of-type(2) {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
+}
+
+.contact-form-section {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.contact-form > :not(:last-child) {
+  margin-block-start: 20px;
+  margin-block-end: 30px;
+}
+
+.contact-form .name-section,
+.email-section,
+.message-section {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.contact-form input:not([type="checkbox"]):not([type="radio"]) {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 16px;
+  flex-basis: 50%;
+}
+
+.contact-form label {
+  flex-basis: 50%;
+}
+
+.contact-form div {
+  padding-left: 30px;
+}
+.radio-prompt {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-form .message-section textarea {
+  flex-basis: 50%;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+/* .contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+} */
+
+.contact-footer div {
+  display: flex;
+  justify-content: end;
+}

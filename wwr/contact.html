@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="W03 Project: Rafting Site - Contact us" />
     <meta name="author" content="Henry Chizoba" />
-    <title>W05 Rafting Project: Contact Us Page</title>
+    <title>WWR Rafting - Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,9 +27,11 @@
       </nav>
     </header>
 
-    <main>
-      <section class="company-info">
-        <div class="">
+    <main class="contact-page">
+      <section class="contact-info" 
+      styl="border: 1px solid red;"
+      >
+        <div class="company-details">
           <h2>Company Information</h2>
           <ul>
             <li>Address: 123 Main Street, Anytown, USA</li>
@@ -41,9 +43,6 @@
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3583.893243326573!2d-85.61842771756965!3d41.09063494337473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88142ce9abc7d12b%3A0x7a8549f15b96ce5!2sEel%20River%20Trail%2C%20South%20Whitley%2C%20IN%2046787%2C%20United%20States!3m2!1d41.0902521!2d-85.62529769999999!5e0!3m2!1sen!2sng!4v1754254871443!5m2!1sen!2sng"
-            width="600"
-            height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -51,61 +50,77 @@
         </div>
       </section>
 
-      <search class="team">
+      <section class="team">
         <h2>Our Team</h2>
 
-        <div class="">
+        <div class="employees">
+        <div class="employee">
             <img src="images/employee-1.png" alt="Team Member 1" />
             <p>John Doe</p>
             <p>Rafting Guide</p>
         </div>
 
-        <div class="">
+        <div class="employee">
             <img src="images/employee-2.png" alt="Team Member 2" />
             <p>Jane Smith</p>
             <p>Safety Officer</p>
         </div>
 
-        <div class="">
+        <div class="employee">
             <img src="images/employee-3.png" alt="Team Member 3" />
             <p>Emily Johnson</p>
             <p>River Specialist</p>
         </div>
-      </search>
+        </div>
+    </section>
 
-        <section class="contact-form">
+        <section class="contact-form-section">
             <h2>Send Us A Message</h2>
-            <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
 
-            <label for="">I am reaching out for:</label>
-            <!-- this should be a radio selection -->
-            <div class="radio-buttons">
-                <input type="radio" id="general" name="reason" value="general" checked />
-                <label for="general">General Inquiry</label>
-    
-                <input type="radio" id="reservation-question" name="reason" value="booking" />
-                <label for="reservation-question">Reservation Question</label>
+            <form class="contact-form" action="#" method="post">
+                <div class="name-section">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
 
-                <input type="radio" id="website-suggestion" name="reason" value="feedback" />
-                <label for="website-suggestion">Website Suggestion</label>
-            </div>
+                <div class="email-section">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
 
-            <label for="message">My Message:</label>
-            <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                <div class="radio-buttons">
+                    <span class="radio-prompt">I am reaching out for:</span>
 
-            <input type="checkbox" name="subscribe" id="subscribe" />
-            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    <div class="">
+                        <input type="radio" id="general" name="reason" value="general" checked />
+                        <label for="general">General Inquiry</label>
+                    </div>
 
-            <button type="submit">Send Message</button>
+                    <div class="">
+                        <input type="radio" id="reservation-question" name="reason" value="booking" />
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+
+                    <div class="">
+                        <input type="radio" id="website-suggestion" name="reason" value="feedback" />
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+
+                <div class="message-section">
+                    <label for="message">My Message:</label>
+                    <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                </div>
+
+                <div class="newsletter-section">
+                    <input type="checkbox" name="subscribe" id="subscribe" />
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
             </form>
     </main>
 
-    <footer>
+    <footer class="contact-footer">
       <p>&copy; 2025 White Water Rafting Co. | Henry Chizoba</p>
 
       <nav class="socialmedia">
