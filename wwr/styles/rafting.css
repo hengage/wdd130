@@ -168,6 +168,10 @@ footer {
   justify-content: flex-end;
 }
 
+footer p {
+  font-size: 0.8rem;
+}
+
 /* ======= Contact Page Styles ============= */
 .contact-page {
   margin-top: 73px;
@@ -215,7 +219,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 40px;
+  padding-top: 70px;
 }
 
 .employees img {
@@ -243,6 +247,9 @@ footer {
   margin-bottom: 80px;
 }
 
+.contact-form {
+  margin-top: 70px;
+}
 .contact-form > :not(:last-child) {
   margin-block-start: 20px;
   margin-block-end: 30px;
@@ -281,6 +288,10 @@ footer {
 .contact-form .message-section textarea {
   flex-basis: 50%;
   resize: none;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .contact-form button {
@@ -296,16 +307,4 @@ footer {
 
 .contact-form button:hover {
   background-color: var(--accent1-color);
-}
-
-/* .contact-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-} */
-
-.contact-footer div {
-  display: flex;
-  justify-content: end;
 }
