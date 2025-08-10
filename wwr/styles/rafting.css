@@ -279,7 +279,7 @@ footer p {
 }
 
 .newsletter .btn {
-  background-color: var(--accent1-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 0.75rem 2rem;
   border: none;
@@ -391,6 +391,190 @@ footer p {
   margin: 0;
 }
 
+/* ======= Trips Page Styles ========= */
+/* Trips CTA Section */
+.trips-cta {
+  position: relative;
+  margin: 3rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trips-cta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.7);
+  transition: transform 0.5s ease;
+}
+
+.trips-cta:hover .trips-cta-bg {
+  transform: scale(1.03);
+}
+
+.trips-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.trips-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: var(--heading-font);
+}
+
+.trips-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.trips-cta .btn {
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.trips-cta .btn:hover {
+  background-color: white;
+  color: var(--accent1-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Trip Images Section */
+.trip-images {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.trip-images h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: var(--heading-font);
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.trip-images h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--accent1-color);
+  border-radius: 2px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trip-images figure {
+  margin: 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-images figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.trip-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.trip-images figure:hover img {
+  transform: scale(1.03);
+}
+
+.trip-images figcaption {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-family: var(--heading-font);
+}
+
+/* Trip Comparison Table */
+.trip-comparison {
+  margin: 4rem 0;
+  overflow-x: auto;
+}
+
+.trip-comparison h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1rem;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+} */
+
+
 .cta p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -402,7 +586,7 @@ footer p {
 
 .cta .btn-primary {
   display: inline-block;
-  background-color: var(--accent1-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 0.9rem 2.5rem;
   border-radius: 50px;
