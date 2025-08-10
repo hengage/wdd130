@@ -671,7 +671,7 @@ tr:hover {
 
 .employees p:nth-of-type(2) {
   text-decoration: none;
-  color: var(--accent1-color);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -727,7 +727,7 @@ tr:hover {
 }
 
 .contact-form button {
-  background-color: var(--accent2-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
